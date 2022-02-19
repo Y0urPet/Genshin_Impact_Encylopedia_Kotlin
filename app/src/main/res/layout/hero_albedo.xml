@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backgroung_hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                tools:src="@tools:sample/avatars" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/hero_name"
+            style="@style/TextContent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            tools:text="@string/heroes_name"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/pang_hero"
+            style="@style/TextContent.Subtitle"
+            android:layout_width="140dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            tools:text="@string/hero_nickname"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hero_desc"
+            style="@style/TextContent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:lineSpacingMultiplier="1"
+            tools:text="@string/herodesc"
+            android:textSize="15sp" />
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/profile"
+            android:textSize="20sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/birthday"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/hero_birth"
+                    style="@style/TextSpec.Value"
+                    tools:text="@string/herobirthday"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/nation"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/content_specs_size"
+                    android:textSize="15sp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/affil"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/content_specs_battery"
+                    android:textSize="15sp"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:layout_marginBottom="8dp"
+            android:text="@string/vc"
+            android:textSize="15sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/hero_vc"
+                style="@style/TextContent"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/profile_image"
+                tools:text="@string/Herovcname"
+                android:textSize="25sp" />
+        </RelativeLayout>
+        <TextView
+            style="@style/TextContent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/combat"
+            android:textSize="30sp" />
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:layout_marginStart="16dp"
+            android:layout_width="140dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/Talent"
+            android:textSize="16sp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/icon_hero_basic"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="16dp"
+                    tools:src="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/hero_basic"
+                    style="@style/TextSpec.Field"
+                    android:layout_marginTop="25dp"
+                    tools:text="@string/basic"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/hero_basic_desc"
+                    style="@style/TextSpec.Value"
+                    android:layout_height="240dp"
+                    tools:text="@string/basicdesc"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/icon_hero_E"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="16dp"
+                    tools:src="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/hero_E"
+                    style="@style/TextSpec.Field"
+                    android:layout_marginTop="25dp"
+                    tools:text="@string/Ename"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/hero_E_desc"
+                    style="@style/TextSpec.Value"
+                    tools:text="@string/Ename"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/icon_hero_burst"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="16dp"
+                    tools:src="@tools:sample/avatars" />
+
+
+                <TextView
+                    android:id="@+id/hero_burst"
+                    style="@style/TextSpec.Field"
+                    android:layout_marginTop="25dp"
+                    tools:text="@string/burst"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/hero_burst_desc"
+                    style="@style/TextSpec.Value"
+                    tools:text="@string/burstdesc"
+                    android:textSize="15sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

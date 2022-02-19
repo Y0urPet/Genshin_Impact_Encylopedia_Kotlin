@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bamber" />
+
+            <TextView
+                style="@style/TextContent.Small.White"
+                android:layout_width="149dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#4D000000"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="@string/bow"
+                android:textSize="20sp"
+                app:drawableStartCompat="@drawable/icon_bow" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/TextContent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/amber"
+            android:textSize="32sp" />
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:layout_marginStart="16dp"
+            android:layout_width="140dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/pang_amber"
+            android:textSize="16sp"/>
+
+        <TextView
+            style="@style/TextContent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:lineSpacingMultiplier="1"
+            android:text="@string/desc_amber"
+            android:textSize="15sp" />
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/profile"
+            android:textSize="20sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/birthday"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/amber_birthday"
+                    android:textSize="15sp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/nation"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/content_specs_size"
+                    android:textSize="15sp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/affil"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/content_specs_battery"
+                    android:textSize="15sp"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:layout_marginBottom="8dp"
+            android:text="@string/vc"
+            android:textSize="15sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/iwami_manaka" />
+
+            <TextView
+                style="@style/TextContent"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/profile_image"
+                android:text="@string/amber_vc"
+                android:textSize="25sp"/>
+        </RelativeLayout>
+        <TextView
+            style="@style/TextContent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/combat"
+            android:textSize="30sp" />
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:layout_marginStart="16dp"
+            android:layout_width="140dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/Talent"
+            android:textSize="16sp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/talent_sharpshooter" />
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/Amber_basic"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:layout_height="240dp"
+                    android:text="@string/Amber_basic_desc"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/talent_explosive_puppet" />
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/Amber_E"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/Amber_E_desc"
+                    android:textSize="15sp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/talent_fiery_rain" />
+
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/Amber_burst"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/Amber_burst_desc"
+                    android:textSize="15sp"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
